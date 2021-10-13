@@ -1,0 +1,86 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  display: none;
+
+  &_container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    background-color: $white-color;
+    will-change: opacity transform;
+    animation: fadeDown linear 0.2s;
+    transition: all 0.2s;
+
+    &-header {
+      padding: 32px 16px;
+      background-color: #009688;
+      position: relative;
+    }
+
+    &-header > i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: $white-color;
+      font-size: 1.4rem;
+      padding: 16px;
+    }
+    &-header > i:hover {
+      background-color: $hover-color;
+      color: $black-color;
+    }
+    &-header > p {
+      text-align: center;
+      color: $white-color;
+      font-size: 3rem;
+      margin: 14px 0;
+      letter-spacing: 4px;
+    }
+    &-header > p > i {
+      margin-right: 12px;
+    }
+
+    &-content {
+      padding: 0 16px;
+      &-text {
+        font-size: 1.5rem;
+        color: $black-color;
+        margin: 15px 0;
+      }
+      &-input {
+        font-size: 1.4rem;
+        padding: 10px;
+        width: 100%;
+      }
+      &-btn {
+        outline: none;
+        border: none;
+        width: 100%;
+        font-size: 1.4rem;
+        background-color: #009688;
+        padding: 16px 0;
+        color: $white-color;
+        margin: 16px 0;
+      }
+      &-btn > i {
+        font-size: 1.2rem;
+      }
+      &-help {
+        font-size: 1.5rem;
+        color: $black-color;
+        margin: 15px 0;
+        float: right;
+      }
+      &-help > a {
+        color: #2196f3;
+      }
+    }
+  }
+}

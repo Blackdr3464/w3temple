@@ -1,0 +1,112 @@
+.buyticket-cover {
+  background-color: $black-color;
+}
+
+.buyticket {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+
+  &_title {
+    text-align: center;
+    margin-bottom: 36px;
+    &-name {
+      color: $white-color;
+      font-size: 3rem;
+      font-weight: 400;
+      margin: 10px 0;
+    }
+
+    &-description {
+      color: $white-color;
+      opacity: 0.6;
+      font-size: 1.5rem;
+      font-style: italic;
+      margin: 15px 0;
+    }
+  }
+
+  &_calendar {
+    background-color: $white-color;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      font-size: 1.5rem;
+      color: #757575;
+      padding: 8px 16px;
+      border-bottom: 1px solid $hover-color;
+
+      &--sold-out {
+        padding: 2px 8px;
+        line-height: 1.6rem;
+        margin-left: 16px;
+        background-color: #f44336;
+        color: $white-color;
+      }
+
+      &--number {
+        float: right;
+        padding: 2px 8px;
+        background-color: $black-color;
+        border-radius: 50%;
+        color: $white-color;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &_address {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 32px 0;
+
+    &-item {
+      width: 33.333%;
+      margin: 0 -5px;
+      padding: 0 5px;
+      &-img {
+        width: 100%;
+        display: block;
+      }
+
+      &-img:hover {
+        opacity: 0.6;
+      }
+      &-content {
+        background-color: $white-color;
+        padding: 0 16px;
+        font-size: 1.5rem;
+        &--name {
+          margin: 0;
+          padding-top: 15px;
+          font-weight: 700;
+        }
+        &--day {
+          color: $grey-color;
+          margin: 15px 0;
+        }
+        &--description {
+          margin: 15px 0;
+        }
+        &--btn {
+          margin-bottom: 16px;
+          background-color: $black-color;
+          outline: none;
+          border: none;
+          color: $white-color;
+          padding: 10px 16px;
+        }
+        &--btn:hover {
+          background-color: $hover-color;
+          color: $black-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.content {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+
+.content_text {
+  &-heading,
+  &-slogan {
+    text-align: center;
+  }
+
+  &-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  &-slogan {
+    font-size: 1.5rem;
+    opacity: 0.8;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  &-introduce {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+
+.content_member {
+  display: flex;
+  justify-content: space-around;
+  padding: 32px 0;
+
+  &-name {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  &-item {
+    margin: 0 52px;
+  }
+  &-img {
+    width: 155px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    transform: scale(1);
+  }
+
+  &-img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+}

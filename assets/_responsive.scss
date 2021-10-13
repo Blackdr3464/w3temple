@@ -1,0 +1,52 @@
+// For tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+// For mobile
+@media (max-width: 739px) {
+  .header_nav {
+    display: none;
+  }
+
+  .header_menu {
+    display: block;
+    color: $white-color;
+    font-size: 1.6rem;
+    margin-left: 16px;
+  }
+
+  .slider_content {
+    display: none;
+  }
+
+  .content_member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buyticket_address {
+    flex-direction: column;
+  }
+
+  .buyticket_address-item {
+    width: 100%;
+    margin: 0 0 16px 0;
+    padding: 0;
+  }
+
+  .contact_infor {
+    flex-direction: column;
+  }
+
+  .contact_infor-input--head {
+    flex-direction: column;
+  }
+
+  .form-input:nth-child(1) {
+    margin-bottom: 8px;
+  }
+
+  .form-input:nth-child(2) {
+    margin-left: 0;
+  }
+}
