@@ -1,17 +1,17 @@
 .slider {
-  background: url(assets/image/slider1.jpg) top center / cover no-repeat;
+  background: url(/assets/image/slider1.jpg) top center / cover no-repeat;
   margin-top: 46px;
   padding-top: 50%;
   position: relative;
-}
 
-.slider_content {
-  position: absolute;
-  bottom: 48px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: $white-color;
-  font-size: 1.3rem;
-  text-align: center;
-  font-weight: 700;
+  &_content {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white-color;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+  }
 }
